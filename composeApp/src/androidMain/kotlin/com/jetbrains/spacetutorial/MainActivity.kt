@@ -56,6 +56,7 @@ fun Increment(count : MutableState<Int>){
         Text(text = "+")
     }
 }
+
 @Composable
 fun Decrement(count : MutableState<Int>){
     Button(onClick = { count.value-=1 }, Modifier.padding(6.dp)) {
